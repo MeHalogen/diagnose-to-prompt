@@ -1,5 +1,7 @@
 # diagnose-to-prompt
 
+![Terminal Demo](./demo.gif)
+
 > **LLM Crash Context Compiler:** A zero-dependency diagnostic tool to parse Node.js stack traces, fetch the exact source code surrounding the crash site, and generate Markdown diagnostic prompts for LLMs to debug.
 
 ---
