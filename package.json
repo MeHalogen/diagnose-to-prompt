@@ -1,0 +1,41 @@
+{
+  "name": "diagnose-to-prompt",
+  "version": "1.0.0",
+  "description": "Zero-dependency diagnostic utility to parse stack traces, extract source file crash sites, and generate Markdown LLM debugging prompts.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "diagnose-to-prompt": "./dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "keywords": [
+    "stacktrace",
+    "error",
+    "diagnose",
+    "prompt",
+    "llm",
+    "debug",
+    "vibe-coding"
+  ],
+  "author": "Antigravity Factory Manager",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.8.0",
+    "vitest": "^3.2.0"
+  }
+}
